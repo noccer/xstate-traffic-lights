@@ -6,4 +6,10 @@ Project will be based around a crossroads with traffic lights.
 - then all traffic stops and the pedestrian lights activate, blink red then go red. Cycle begins again until pedestrian button is hit.
 - visible timer on screen
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Stack notes:
+
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Using Typescript
+- prettier
+- emotion
+- XState
