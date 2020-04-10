@@ -1,11 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {
+  Light,
+  LightColour,
+  LightType,
+  LightState,
+} from './components/Light/Light';
+import { TrafficLight } from './components/TrafficLight/TrafficLight';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <TrafficLight type={LightType.pedestrian} />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
