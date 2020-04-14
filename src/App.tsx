@@ -1,31 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {
-  Light,
-  LightColour,
-  LightType,
-  LightState,
-} from './components/Light/Light';
 import { TrafficLight } from './components/TrafficLight/TrafficLight';
+import { LightType } from './state/types';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <TrafficLight type={LightType.pedestrian} />
-        <img src={logo} className="App-logo" alt="logo" />
+        <TrafficLight type={LightType.traffic} />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          <code>XState Traffic Lights</code>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
