@@ -1,22 +1,6 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-
-export enum LightType {
-  traffic,
-  pedestrian,
-}
-
-export enum LightColour {
-  red,
-  orange,
-  green,
-}
-
-export enum LightState {
-  on,
-  blinking,
-  off,
-}
+import { LightType, LightState, LightColour } from '../../state/types';
 
 interface LightProps {
   type: LightType;
@@ -29,7 +13,7 @@ const lightContainerCSS = ({
   type,
   state,
 }: {
-  bgColor: string;
+  bgColor: LightColour;
   type: LightType;
   state: LightState;
 }) => css`
@@ -41,28 +25,6 @@ const lightContainerCSS = ({
   background-color: ${bgColor};
 `;
 
-const getBgColor = ({ colour }: { colour: LightColour }): string => {
-  const { green, orange, red } = LightColour;
-  switch (colour) {
-    case green:
-      return 'green';
-    case orange:
-      return 'orange';
-    case red:
-      return 'red';
-    default:
-      return 'green';
-  }
-};
-
 export const Light = ({ state, type, colour }: LightProps) => {
-  const bgColor = getBgColor({ colour });
-
-  return (
-    <div css={lightContainerCSS({ bgColor, type, state })}>
-      <span role="img" aria-label="smile">
-        .
-      </span>
-    </div>
-  );
+  return <div css={lightContainerCSS({ bgColor: colour, type, state })}></div>;
 };

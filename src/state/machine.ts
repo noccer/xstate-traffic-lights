@@ -1,6 +1,6 @@
 import { Machine } from 'xstate';
 import { TrafficState } from './types';
-import { TRANSITION } from './actions';
+import { TRANSITION } from './constants';
 
 export const crossRoads = Machine({
   id: 'crossRoads',

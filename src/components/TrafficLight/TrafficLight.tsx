@@ -1,24 +1,86 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-import { LightType, Light, LightState, LightColour } from '../Light/Light';
+import { Light } from '../Light/Light';
+import {
+  LightType,
+  LightState,
+  LightColour,
+  TrafficState,
+} from '../../state/types';
+import { mapTrafficStateToTrafficLightState } from '../../state/utils';
+import { useMachine } from '@xstate/react';
+import { crossRoads } from '../../state/machine';
+import { TRANSITION } from '../../state/constants';
 
 interface TrafficLightProps {
   type: LightType;
 }
 
-const TrafficLightCSS = css``;
+const TrafficLightCSS = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ButtonCSS = css`
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+`;
 
 export const TrafficLight = ({ type }: TrafficLightProps) => {
+  const [trafficState, onTransition] = useMachine<TrafficState, any>(
+    crossRoads,
+  );
+
   if (type === LightType.pedestrian) {
-    return <Pedestrian />;
+    return <PedestrianLight />;
   }
 
-  return <div css={TrafficLightCSS}>hello</div>;
+  const {
+    redState,
+    orangeState,
+    greenState,
+  } = mapTrafficStateToTrafficLightState(trafficState);
+
+  const onClick = (event: any) => {
+    onTransition(TRANSITION);
+  };
+
+  return (
+    <div css={TrafficLightCSS}>
+      <Light
+        state={redState}
+        colour={LightColour.red}
+        type={LightType.traffic}
+      />
+      <Light
+        state={orangeState}
+        colour={LightColour.orange}
+        type={LightType.traffic}
+      />
+      <Light
+        state={greenState}
+        colour={LightColour.green}
+        type={LightType.traffic}
+      />
+      <br />
+      <button css={ButtonCSS} onClick={onClick}>
+        Transition
+      </button>
+    </div>
+  );
 };
 
-const Pedestrian = () => {
+const PedestrianLightCSS = css``; // TODO
+const PedestrianLight = () => {
   return (
-    <div>
+    <div css={PedestrianLightCSS}>
       <Light
         state={LightState.on}
         colour={LightColour.red}
