@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/xstate-traffic-lights/static/css/main.5f361e03.chunk.css",
-    "main.js": "/xstate-traffic-lights/static/js/main.0841e77d.chunk.js",
-    "main.js.map": "/xstate-traffic-lights/static/js/main.0841e77d.chunk.js.map",
+    "main.js": "/xstate-traffic-lights/static/js/main.ccca7160.chunk.js",
+    "main.js.map": "/xstate-traffic-lights/static/js/main.ccca7160.chunk.js.map",
     "runtime-main.js": "/xstate-traffic-lights/static/js/runtime-main.f3fd950c.js",
     "runtime-main.js.map": "/xstate-traffic-lights/static/js/runtime-main.f3fd950c.js.map",
-    "static/js/2.5d8558a8.chunk.js": "/xstate-traffic-lights/static/js/2.5d8558a8.chunk.js",
-    "static/js/2.5d8558a8.chunk.js.map": "/xstate-traffic-lights/static/js/2.5d8558a8.chunk.js.map",
+    "static/js/2.b25395a2.chunk.js": "/xstate-traffic-lights/static/js/2.b25395a2.chunk.js",
+    "static/js/2.b25395a2.chunk.js.map": "/xstate-traffic-lights/static/js/2.b25395a2.chunk.js.map",
     "index.html": "/xstate-traffic-lights/index.html",
-    "precache-manifest.ac7933475da7443ee5a67fd7bb680893.js": "/xstate-traffic-lights/precache-manifest.ac7933475da7443ee5a67fd7bb680893.js",
+    "precache-manifest.ac22efba0da29fb87bee3a0776726b73.js": "/xstate-traffic-lights/precache-manifest.ac22efba0da29fb87bee3a0776726b73.js",
     "service-worker.js": "/xstate-traffic-lights/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/xstate-traffic-lights/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.5d8558a8.chunk.js.LICENSE.txt": "/xstate-traffic-lights/static/js/2.5d8558a8.chunk.js.LICENSE.txt"
+    "static/js/2.b25395a2.chunk.js.LICENSE.txt": "/xstate-traffic-lights/static/js/2.b25395a2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f3fd950c.js",
-    "static/js/2.5d8558a8.chunk.js",
+    "static/js/2.b25395a2.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.0841e77d.chunk.js"
+    "static/js/main.ccca7160.chunk.js"
   ]
 }

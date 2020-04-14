@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e706995fcc4cdf62c655f6fe7395c17d",
+    "revision": "3e84acdf1da43b70d2fb984063db753c",
     "url": "/xstate-traffic-lights/index.html"
   },
   {
-    "revision": "500570a98a0db6820856",
+    "revision": "b7ec54fdc4ae94af420d",
     "url": "/xstate-traffic-lights/static/css/main.5f361e03.chunk.css"
   },
   {
-    "revision": "8b79c4d7d78fb6cf41ba",
-    "url": "/xstate-traffic-lights/static/js/2.5d8558a8.chunk.js"
+    "revision": "9706f69edec434ea0cab",
+    "url": "/xstate-traffic-lights/static/js/2.b25395a2.chunk.js"
   },
   {
     "revision": "501f379103cbfcb5ff11211dd39a28a2",
-    "url": "/xstate-traffic-lights/static/js/2.5d8558a8.chunk.js.LICENSE.txt"
+    "url": "/xstate-traffic-lights/static/js/2.b25395a2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "500570a98a0db6820856",
-    "url": "/xstate-traffic-lights/static/js/main.0841e77d.chunk.js"
+    "revision": "b7ec54fdc4ae94af420d",
+    "url": "/xstate-traffic-lights/static/js/main.ccca7160.chunk.js"
   },
   {
     "revision": "0b1b99f50e21b44c0bad",

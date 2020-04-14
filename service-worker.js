@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/xstate-traffic-lights/precache-manifest.ac7933475da7443ee5a67fd7bb680893.js"
+  "/xstate-traffic-lights/precache-manifest.ac22efba0da29fb87bee3a0776726b73.js"
 );
 
 self.addEventListener('message', (event) => {
