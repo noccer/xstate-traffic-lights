@@ -1,4 +1,1 @@
-enum Transition {
-  toggle = 'TRANSITION',
-}
-export const TRANSITION = Transition.toggle;
+export const CHANGE = 'CHANGE';

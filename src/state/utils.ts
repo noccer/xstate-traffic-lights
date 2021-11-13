@@ -2,9 +2,10 @@ import { TrafficLightState, TrafficState, LightState } from './types';
 import { State } from 'xstate';
 
 export const mapTrafficStateToTrafficLightState = (
-  trafficState: State<TrafficState, any, any, any>,
+  trafficState: State<typeof TrafficState, any, any, any>,
 ): TrafficLightState => {
   const { value } = trafficState;
+
   return {
     redState: value === TrafficState.stopped ? LightState.on : LightState.off,
     orangeState:

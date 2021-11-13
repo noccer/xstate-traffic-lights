@@ -8,9 +8,14 @@
     "activityBarBadge.background": "#f0e8f7",
     "activityBarBadge.foreground": "#15202b",
     "statusBar.background": "#359268",
-    "statusBar.border": "#359268",
     "statusBar.foreground": "#e7e7e7",
-    "statusBarItem.hoverBackground": "#43b783"
+    "statusBarItem.hoverBackground": "#43b783",
+    "editorGroup.border": "#42b883",
+    "panel.border": "#42b883",
+    "sash.hoverBorder": "#42b883",
+    "sideBar.border": "#42b883",
+    "statusBarItem.remoteBackground": "#359268",
+    "statusBarItem.remoteForeground": "#e7e7e7"
   },
   "peacock.color": "#42b883",
   "editor.formatOnSave": true,

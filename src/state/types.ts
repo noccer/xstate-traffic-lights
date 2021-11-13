@@ -1,8 +1,9 @@
-export enum TrafficState {
-  flowing = 'flowing',
-  stopping = 'stopping',
-  stopped = 'stopped',
-}
+export const TrafficState = {
+  inactive: 'inactive',
+  flowing: 'flowing',
+  stopping: 'stopping',
+  stopped: 'stopped',
+};
 
 export interface TrafficLightState {
   redState: LightState;

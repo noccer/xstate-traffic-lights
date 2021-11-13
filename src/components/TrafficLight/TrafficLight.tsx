@@ -10,7 +10,7 @@ import {
 import { mapTrafficStateToTrafficLightState } from '../../state/utils';
 import { useMachine } from '@xstate/react';
 import { crossRoads } from '../../state/machine';
-import { TRANSITION } from '../../state/constants';
+import { CHANGE } from '../../state/constants';
 
 interface TrafficLightProps {
   type: LightType;
@@ -34,7 +34,7 @@ const ButtonCSS = css`
 `;
 
 export const TrafficLight = ({ type }: TrafficLightProps) => {
-  const [trafficState, onTransition] = useMachine<TrafficState, any>(
+  const [trafficState, onTransition] = useMachine<typeof TrafficState, any>(
     crossRoads,
   );
 
@@ -49,7 +49,7 @@ export const TrafficLight = ({ type }: TrafficLightProps) => {
   } = mapTrafficStateToTrafficLightState(trafficState);
 
   const onClick = (event: any) => {
-    onTransition(TRANSITION);
+    onTransition(CHANGE);
   };
 
   return (
